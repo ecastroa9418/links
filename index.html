@@ -5,9 +5,48 @@
     <meta charset="utf-8">
     <meta name="author" content="Eduardo Castro">
     <style>
+            
       body{
         padding-top:40px;
         padding-bottom:40px;
+        background-color:#232946;
+        display: flex;
+        justify-content: center;
+      }
+
+      .name{
+        color:#fffffe;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner{
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons{
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .social-icons a {
+        color:#fffffe;
+        text-decoration:none;
+      }
+
+      .links {
+        background-color:#eebbc3;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .links a {
+        color:#232946;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
 
       .banner-image{
@@ -23,44 +62,54 @@
         border-radius: 48px;
         object-fit: cover;
       }
+
+      .items {
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
     </style>
   </head>
 
   <body>
-    <div class="banner">
-      <img src="/thumbnails/Profile Picture.jpeg" alt="Eduardo Castro" class="banner-image">
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img src="/thumbnails/Profile Picture.jpeg" alt="Eduardo Castro" class="banner-image">
+      </div>
 
-    <div class="Name">
-      Eduardo Castro
-    </div>
+      <div class="name">
+        Eduardo Castro
+      </div>
 
-    <div class="social-icons">
-      <a href="https://github.com/ecastroa9418" target="_blank">
-        GitHub
-      </a>
+      <div class="social-icons">
+        <a href="https://github.com/ecastroa9418" target="_blank">
+          GitHub
+        </a>
 
-      <a href="https://www.linkedin.com/in/eduardo-castro-amenabar-52a124144/" target="_blank">
-        LinkedIn
-      </a>
+        <a href="https://www.linkedin.com/in/eduardo-castro-amenabar-52a124144/" target="_blank">
+          LinkedIn
+        </a>
 
-      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FEdo_castroa" target="_blank">
-        X
-      </a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FEdo_castroa" target="_blank">
+          X
+        </a>
 
-      <a href="https://www.instagram.com/eduardo_castroa/?utm_source=qr&igsh=aXZ0dXN6N2F1bDhx" target="_blank">
-        Instagram
-      </a>
-    </div>
+        <a href="https://www.instagram.com/eduardo_castroa/?utm_source=qr&igsh=aXZ0dXN6N2F1bDhx" target="_blank" class="social-icons">
+          Instagram
+        </a>
+      </div>
 
-    <div class="links">
-      <img src="/thumbnails/Old Man.png" alt="Peace Place" class="thumbnail">
-      <a target="_blank" href="http://www.awbunge.com.ar/predicaciones/Soneto.html">Soneto</a>
-    </div>
+      <div class="links">
+        <img src="/thumbnails/Old Man.png" alt="Peace Place" class="thumbnail">
+        <a target="_blank" href="http://www.awbunge.com.ar/predicaciones/Soneto.html">Soneto</a>
+      </div>
 
-    <div class="links">
-      <img src="/thumbnails/Quote.png" alt="Getting to the finish line" class="thumbnail">
-      <a target="_blank" href="https://quotefancy.com/quote/55621/Zig-Ziglar-Ability-can-take-you-to-the-top-but-it-takes-character-to-keep-you-there">Inspirational Quote</a>
+      <div class="links">
+        <img src="/thumbnails/Quote.png" alt="Getting to the finish line" class="thumbnail">
+        <a target="_blank" href="https://quotefancy.com/quote/55621/Zig-Ziglar-Ability-can-take-you-to-the-top-but-it-takes-character-to-keep-you-there">Inspirational Quote</a>
+      </div>
     </div>
   </body>
 </html>
